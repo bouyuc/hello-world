@@ -3,6 +3,7 @@ syntax on
 filetype plugin indent on
 colorscheme jellybeans
 autocmd vimenter * NERDTree
+nmap <F5> :shell<CR>
 nmap <F8> :TagbarToggle<CR>
 nmap <F7> :NERDTreeToggle<CR>
 
