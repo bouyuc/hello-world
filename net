@@ -1,0 +1,17 @@
+# Configuration example for Umeå university (https://www.eduroam.umu.se/)
+# see http://www.eeemil.com/guides/2015/08/29/netctl-eduroam.html
+# author: Emil Marklund <eeemil@acc.umu.se>
+Description='SJSU_premier'
+Interface=wlp2s0
+Connection=wireless
+Security='wpa-configsection'
+IP='dhcp'
+WPAConfigSection=(
+    'ssid="SJSU_premier"'
+    'key_mgmt=WPA-EAP'
+    'eap=PEAP'
+    'proto=WPA2'
+    'phase2="auth-MSCHAPV2"'
+    'identity="mystudentid"'
+    'password="mysjsu passwd"'
+)
